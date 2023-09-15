@@ -4,34 +4,20 @@
   padding: 0;
 }
 
-.boxes {
-  display: inline-block;
-  width: 200px;
-  height: 200px;
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
-@media screen and (width <= 600px) {
-  .boxes {
-    display: block;
-    width: 100%;
-  }
+main {
+  flex-grow: 1;
 }
 
-.box-1 {
-  background-color: lightblue;
+.buttons {
+  text-align: center;
 }
 
-.box-2 {
-  background-color: coral;
-}
-
-.box-3 {
-  background-color: palevioletred;
-  height: auto;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
+button .text {
+  display: none;
 }
